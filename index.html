@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>einf_fabi</title>
+  <meta name="description" content="einf_fabi — Piaggio NRG 50 DD, Old-School Vibes">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Noise overlay -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- Scanlines -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- Loading -->
+  <div id="loader" class="loader">
+    <div class="loader-text">
+      <span class="loader-cursor">_</span>
+    </div>
+  </div>
+
+  <!-- Enter -->
+  <div id="enterOverlay" class="enter-overlay">
+    <div class="enter-box">
+      <span class="enter-label">&gt; click to enter_</span>
+    </div>
+  </div>
+
+  <!-- Audio -->
+  <audio id="bgMusic" loop preload="none">
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Main -->
+  <main id="mainContent" class="main-content">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-line"></div>
+      <span class="header-tag">est. 2018</span>
+      <div class="header-line"></div>
+    </header>
+
+    <!-- Title -->
+    <section class="title-section">
+      <h1 class="site-title">einf_fabi</h1>
+      <div class="title-underline"></div>
+      <p class="site-subtitle">orange &amp; black. old school forever.</p>
+    </section>
+
+    <!-- Specs Banner -->
+    <section class="specs-banner">
+      <div class="spec-scroll">
+        <span class="spec-item">Piaggio NRG 50 DD</span>
+        <span class="spec-dot">&bull;</span>
+        <span class="spec-item">49ccm 2-Takt</span>
+        <span class="spec-dot">&bull;</span>
+        <span class="spec-item">5 PS</span>
+        <span class="spec-dot">&bull;</span>
+        <span class="spec-item">107 kg</span>
+        <span class="spec-dot">&bull;</span>
+        <span class="spec-item">55 km/h</span>
+        <span class="spec-dot">&bull;</span>
+        <span class="spec-item">2018</span>
+        <span class="spec-dot">&bull;</span>
+        <span class="spec-item">Orange/Schwarz</span>
+        <span class="spec-dot">&bull;</span>
+        <span class="spec-item">Piaggio NRG 50 DD</span>
+        <span class="spec-dot">&bull;</span>
+        <span class="spec-item">49ccm 2-Takt</span>
+        <span class="spec-dot">&bull;</span>
+        <span class="spec-item">5 PS</span>
+        <span class="spec-dot">&bull;</span>
+        <span class="spec-item">107 kg</span>
+        <span class="spec-dot">&bull;</span>
+        <span class="spec-item">55 km/h</span>
+        <span class="spec-dot">&bull;</span>
+        <span class="spec-item">2018</span>
+        <span class="spec-dot">&bull;</span>
+        <span class="spec-item">Orange/Schwarz</span>
+      </div>
+    </section>
+
+    <!-- Scooter Button -->
+    <section class="cta-section">
+      <button class="scooter-btn" id="bikeBtn">Technische Daten</button>
+    </section>
+
+    <!-- Social -->
+    <section class="social" id="social">
+      <a href="https://www.instagram.com/einf_fabi/" target="_blank" rel="noopener noreferrer" class="social-link" data-label="IG">
+        <span class="social-handle">@einf_fabi</span>
+        <span class="social-platform">Instagram</span>
+      </a>
+      <a href="https://www.tiktok.com/@einf_fabi" target="_blank" rel="noopener noreferrer" class="social-link" data-label="TT">
+        <span class="social-handle">@einf_fabi</span>
+        <span class="social-platform">TikTok</span>
+      </a>
+      <a href="https://www.snapchat.com/add/fabi2026914?share_id=p8H6ScLQW7Q&locale=de-DE" target="_blank" rel="noopener noreferrer" class="social-link" data-label="SC">
+        <span class="social-handle">@fabi2026914</span>
+        <span class="social-platform">Snapchat</span>
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span class="footer-text">fabi &copy; 2026</span>
+    </footer>
+
+  </main>
+
+  <!-- Scooter Popup -->
+  <div class="popup-overlay" id="bikePopup">
+    <div class="popup">
+      <button class="popup-close" id="popupClose">X</button>
+      <h2 class="popup-title">Piaggio NRG 50 DD</h2>
+      <div class="popup-divider"></div>
+      <div class="popup-grid">
+        <div class="popup-row"><span>Motor</span><span>49 ccm, 2-Takt, wassergekühlt</span></div>
+        <div class="popup-row"><span>Leistung</span><span>5 PS / 3,7 kW</span></div>
+        <div class="popup-row"><span>Drehmoment</span><span>4,7 Nm bei 6.000/min</span></div>
+        <div class="popup-row"><span>Getriebe</span><span>Variomatik</span></div>
+        <div class="popup-row"><span>Gewicht</span><span>107 kg</span></div>
+        <div class="popup-row"><span>Top Speed</span><span>55 km/h</span></div>
+        <div class="popup-row"><span>Sitzhöhe</span><span>810 mm</span></div>
+        <div class="popup-row"><span>Tank</span><span>6,7 L</span></div>
+        <div class="popup-row"><span>Bremse V</span><span>Scheibe 240 mm</span></div>
+        <div class="popup-row"><span>Bremse H</span><span>Scheibe 175 mm</span></div>
+        <div class="popup-row"><span>Fahrwerk</span><span>USD-Gabel / Monoshock</span></div>
+        <div class="popup-row"><span>Baujahr</span><span>2018</span></div>
+        <div class="popup-row"><span>Farbe</span><span>Orange / Schwarz</span></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
